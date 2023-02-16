@@ -6,7 +6,7 @@ A module for implementing a set data structure in lua
 ### union
 
 ```lua
-set:union(set: a, set: b): table
+set:union(a: set, b: set): table
 ```
 Returns the union of set a and set b
 
@@ -15,7 +15,7 @@ Returns the union of set a and set b
 ### intersection
 
 ```lua
-set:intersection(set: a, set: b): table
+set:intersection(a: set, b: set): table
 ```
 
 Returns the intersection of set a and b
