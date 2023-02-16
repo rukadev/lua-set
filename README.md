@@ -1,43 +1,62 @@
 # lua-set
-A module for creating sets in lua
+A module for implementing a set data structure in lua
 
 ## API
-
-Usage Guide
 
 ### union
 
 ```lua
-set:union(set: a, set: b)
+set:union(set: a, set: b): table
 ```
+Returns the union of set a and set b
+
+---
 
 ### intersection
 
 ```lua
-set:intersect(set: a, set: b)
+set:intersection(set: a, set: b): table
 ```
+
+Returns the intersection of set a and b
+
+---
 
 ### add
 
 ```lua
-set:add(key: value)
+set:add(key: any): nil
 ```
+
+Add key to set
+
+---
 
 ### remove
 
 ```lua
-set:remove(key: value)
+set:remove(key: any): nil
 ```
+
+Remove key from set
+
+---
 
 ### contains
 
 ```lua
-set:contains(key: value)
+set:contains(key: any): bool
 ```
+
+Returns true if the set contains the key
+
+---
 
 ### get
 
+Returns the set items
+
 ```lua
-set:get()
+set:get(): table
 ```
 
